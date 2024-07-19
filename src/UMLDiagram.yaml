@@ -1,0 +1,76 @@
+ --------------------------------
+|            Person            |
+ --------------------------------
+| - name: String               |
+| - address: String            |
+| - email: String              |
+ --------------------------------
+| + Person(name: String,       |
+|          address: String,    |
+|          email: String)      |
+| + getters and setters        |
+ --------------------------------
+                  /\
+                  |
+       ------------------
+      |              |
+ --------------------------------
+|           Student            |
+ --------------------------------
+| - studentId: int             |
+| - coursesTaken: List<Course> |
+ --------------------------------
+| + Student(name: String,      |
+|           address: String,   |
+|           email: String,     |
+|           studentId: int)    |
+| + getters and setters        |
+ --------------------------------
+                  /\
+                  |
+       ------------------
+      |              |
+ --------------------------------
+|          Professor           |
+ --------------------------------
+| - department: Department     |
+| - coursesTaught: List<Course>|
+ --------------------------------
+| + Professor(name: String,    |
+|             address: String, |
+|             email: String,   |
+|             department: Department)|
+| + getters and setters        |
+ --------------------------------
+                  /\
+                  |
+       ------------------
+      |              |
+ --------------------------------
+|           Course             |
+ --------------------------------
+| - courseCode: String         |
+| - title: String              |
+| - professor: Professor       |
+| - studentsEnrolled: List<Student> |
+ --------------------------------
+| + Course(courseCode: String, |
+|          title: String,      |
+|          professor: Professor) |
+| + getters and setters        |
+ --------------------------------
+                  /\
+                  |
+       ------------------
+      |              |
+ --------------------------------
+|         Department           |
+ --------------------------------
+| - name: String               |
+| - headProfessor: Professor   |
+| - coursesOffered: List<Course>|
+ --------------------------------
+| + Department(name: String,   |
+|              headProfessor: Professor)|
+| + getters and setters        |
+ --------------------------------
